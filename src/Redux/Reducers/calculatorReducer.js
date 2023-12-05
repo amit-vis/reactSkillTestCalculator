@@ -1,4 +1,7 @@
+// This is Reducer function here
 import { createSlice } from "@reduxjs/toolkit";
+
+// here creating a Slice
 const calculatorSlice = createSlice({
     name: "calculator",
     initialState: {
@@ -15,6 +18,7 @@ const calculatorSlice = createSlice({
     },
 });
 
+// here we have exported some required things from here
 export const calculatorReducer = calculatorSlice.reducer;
 
 export const actions = calculatorSlice.actions;

@@ -1,13 +1,21 @@
+// import all the required module
 
 import { useDispatch, useSelector } from "react-redux";
 import "../../App.css";
 import { actions, calculatorSelector, calculatorToggleSelector } from "../../Redux/Reducers/calculatorReducer";
 import Style from './Calculator.module.css';
 
+// created the function component of calculator
+
 function Calculator(){
+
+    // assign all the required action into variable
+
     const dispatch = useDispatch();
     const displayValue = useSelector(calculatorSelector);
     const toggle = useSelector(calculatorToggleSelector)
+
+    // handle the click button function here
 
     function handleClickButton(value){
         if(value==="C"){
@@ -19,11 +27,13 @@ function Calculator(){
         }
     }
 
+    // handle plus minus operator here
     const handleNegation = ()=>{
         const newDisplay = displayValue.startsWith("-")? displayValue.slice(1):`-${displayValue}`;
         dispatch(actions.updateDisplay(newDisplay));
     }
 
+    // here written the function to evaluate the result of the value
     const calculateResult = ()=>{
         try {
             const result = eval(displayValue);
@@ -34,6 +44,7 @@ function Calculator(){
     }
     return(
         <>
+        {/* this my HTML code structure part here */}
         <div className={Style.mainContainer}>
             <div className={`${toggle?Style.allButton:Style.allButtonToggle}`}>
             <div className={`${toggle?Style.mainScreen:Style.mainScreenToggle}`}>{displayValue}</div>
