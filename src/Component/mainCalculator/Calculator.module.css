@@ -1,0 +1,106 @@
+.mainContainer{
+    margin: auto;
+    padding-top: 2%;
+}
+.allButton{
+    margin: auto;
+    box-sizing: content-box;
+    padding: 1%;
+    border: 2px solid black;
+    width: 30%;
+
+}
+
+.mainScreen{
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 97%;
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 10px;
+    box-sizing: content-box;
+}
+.firstGroup{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: content-box;
+    margin-top: 1px;
+}
+.plainButton{
+    background-color: rgb(194, 163, 123);
+    width: 24.60%;
+    margin-left: .2%;
+    margin-top: 1%;
+    height: 50px;
+    box-shadow: 0 5px 0 white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.plainButton:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.orgButton{
+    background-color: rgb(162, 97, 11);
+    width: 24.60%;
+    margin-left: .2%;
+    margin-top: 1%;
+    box-shadow: 0 5px 0 white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    
+}
+.orgButton:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.plainButtonExt{
+    background-color: rgb(194, 163, 123);
+    width: 49%;
+    margin-left: .2%;
+    margin-top: 1%;
+    height: 50px;
+    box-shadow: 0 5px 0 white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.plainButtonExt:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.allButtonToggle{
+    background-color: aliceblue;
+    margin: auto;
+    box-sizing: content-box;
+    padding: 1%;
+    border: 2px solid rgb(121, 145, 117);
+    width: 30%;
+}
+.mainScreenToggle{
+    background-color: wheat;
+    color: black;
+    height: 200px;
+    width: 97%;
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 10px;
+    box-sizing: content-box;
+}

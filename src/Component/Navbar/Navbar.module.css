@@ -1,0 +1,63 @@
+.mainNavbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title{
+    color: rgb(211, 218, 210);
+    font-weight: bold;
+}
+.toggleContainer{
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+}
+.toggleCheck{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggleButton{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(211, 194, 194);
+    border-radius: 15px;
+}
+.toggleButton::before{
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    left: 4px;
+    bottom: 2px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.toggleCheck:checked + .toggleButton{
+    background-color: rgb(244, 236, 236);
+}
+.toggleCheck:checked + .toggleButton::before {
+    transform: translateX(26px);
+    background-color: rgb(211, 194, 194);
+}
+.lightBlue{
+    background-color: orange;
+}
+.darkBackground {
+    background-color: rgb(185, 157, 157);
+}
+.titleBlack{
+    color: black;
+}
+

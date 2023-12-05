@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.lightBlue{
+  background-color: white;
+}
+.darkBlue{
+  background-color: rgb(36, 33, 33);
+  height: 100vh;
+}
